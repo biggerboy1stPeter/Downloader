@@ -23,10 +23,10 @@ Clean inline interface • Quality selector • MP3 extraction • Playlist supp
 ## 📸 Demo Screenshots
 
 <p align="center">
-  <img src="https://via.placeholder.com/320x600/1e293b/ffffff?text=1.+Start+%2F+Welcome+Message" alt="Start message" width="24%">  
-  <img src="https://via.placeholder.com/320x600/1e293b/ffffff?text=2.+Link+Received+%26+Format+Buttons" alt="Format selection" width="24%">  
-  <img src="https://via.placeholder.com/320x600/1e293b/ffffff?text=3.+Quality+Selection" alt="Quality picker" width="24%">  
-  <img src="https://via.placeholder.com/320x600/1e293b/ffffff?text=4.+Downloading+Progress+Bar" alt="Progress bar" width="24%">
+  <img src="screenshots/IMG_2514.png" alt="Start message" width="24%">  
+  <img src="screenshots/IMG_2514.png" alt="Format selection" width="24%">  
+  <img src="screenshots/IMG_2515.png" alt="Quality picker" width="24%">  
+  <img src="screenshots/IMG_2515.png" alt="Progress bar" width="24%">
 </p>
 
 
