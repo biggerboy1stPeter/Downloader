@@ -1,109 +1,54 @@
+# Telegram Media Downloader Bot 🎬🎧📥
 
-# Telegram Media Downloader Bot 🎥🎵
+<p align="center">
+  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/stargazers"><img src="https://img.shields.io/github/stars/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=ffd700&logo=github" alt="GitHub stars"></a>
+  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/forks"><img src="https://img.shields.io/github/forks/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=success&logo=github" alt="GitHub forks"></a>
+  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/watchers"><img src="https://img.shields.io/github/watchers/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=blueviolet&logo=github" alt="GitHub watchers"></a>
+  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/releases/latest"><img src="https://img.shields.io/github/v/release/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=ff69b4&logo=github" alt="Latest Release"></a>
+  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/blob/main/LICENSE"><img src="https://img.shields.io/github/license/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=important" alt="License: MIT"></a>
+  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader"><img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"></a>
+</p>
 
-**A powerful, self-hosted Telegram bot** that lets users download videos and audio from **YouTube, TikTok, Instagram, Twitter/X** (and many more sites via yt-dlp).
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/YOUR_USERNAME/telegram-media-downloader?style=flat-square&color=9cf" alt="Repo size"> 
+  <img src="https://img.shields.io/github/last-commit/YOUR_USERNAME/telegram-media-downloader?style=flat-square&color=9cf" alt="Last commit"> 
+  <img src="https://img.shields.io/github/commit-activity/m/YOUR_USERNAME/telegram-media-downloader?style=flat-square&color=9cf" alt="Commit activity">
+</p>
 
-- Clean inline buttons interface
-- Video quality selection (360p–1080p + Best)
-- Audio extraction (MP3 192kbps)
-- Playlist support (first 10 items)
-- Per-user queue & rate limiting
-- Real-time download progress
-- TikTok watermark avoidance (best effort)
-- Optional cookies.txt for private/age-restricted content
-- Temporary file auto-cleanup
-- FastAPI keep-alive for free hosting platforms (Render, Railway, Fly.io, ...)
+**Self-hosted Telegram bot** that downloads videos & audio from  
+**YouTube • TikTok • Instagram • Twitter/X** and 1500+ other sites (powered by **yt-dlp**).
 
-![Bot Demo Screenshot](https://via.placeholder.com/800x400.png?text=Bot+Demo+Screenshot)  
+Clean inline interface • Quality selector • MP3 extraction • Playlist support • Progress tracking
 
-## ✨ Features
+## 📸 Demo Screenshots
 
-- **Supported platforms**: YouTube (incl. Shorts), TikTok, Instagram (Reels/posts), Twitter/X, +1500 other sites via yt-dlp
-- **Formats**: Video (MP4) or Audio (MP3)
-- **Quality options**: 360p, 480p, 720p, 1080p, Best (may exceed Telegram limit)
-- **Limits**: ~48 MB per file (Telegram bot restriction), max 5 items in queue, 45s cooldown
-- **Progress bar** with speed & ETA
-- **Error handling** with friendly, platform-specific messages
-- **Cookies support** → `/cookies` command shows setup guide
-- **Playlist detection** → sends first 10 items as media group
-- **Production-ready** → asyncio queue, throttling middleware, temp dir cleanup
+<p align="center">
+  <img src="https://via.placeholder.com/320x600/1e293b/ffffff?text=1.+Start+%2F+Welcome+Message" alt="Start message" width="24%">  
+  <img src="https://via.placeholder.com/320x600/1e293b/ffffff?text=2.+Link+Received+%26+Format+Buttons" alt="Format selection" width="24%">  
+  <img src="https://via.placeholder.com/320x600/1e293b/ffffff?text=3.+Quality+Selection" alt="Quality picker" width="24%">  
+  <img src="https://via.placeholder.com/320x600/1e293b/ffffff?text=4.+Downloading+Progress+Bar" alt="Progress bar" width="24%">
+</p>
+
+
+## ✨ Key Features
+
+- **Platforms**: YouTube (incl. Shorts), TikTok (no watermark best-effort), Instagram Reels/Posts, Twitter/X, Facebook, Vimeo + **1500+** sites
+- **Output**: Video (MP4) or Audio (MP3 @192kbps)
+- **Quality choices**: 360p • 480p • 720p • 1080p • Best available
+- **Playlist handling**: Downloads first 10 items as media group/album
+- **User limits**: ~48 MB/file (Telegram limit), 5-item queue, 45s cooldown
+- **Real-time progress**: ETA, speed, nice progress bar
+- **Private content**: Optional `cookies.txt` (Netscape format) support
+- **Auto cleanup**: Temporary files deleted after sending
+- **Hosting friendly**: FastAPI keep-alive ping (great for free tiers)
 
 ## 🚀 Quick Start (Docker – Recommended)
 
-1. Clone the repo
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/telegram-downloader-bot.git
-   cd telegram-downloader-bot
-	2	Create .env file BOT_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
-	3	# Optional: PORT=8000 (for hosting platforms)
-	4	
-	5	(Optional) Add cookies.txt (Netscape format) next to the script for private Instagram / age-restricted YouTube
-	6	Run with Docker Compose docker compose up -d --build
-	7	 Or without Docker: pip install -r requirements.txt
-	8	python bot.py
-	9	
-📋 Requirements (non-Docker)
-	•	Python 3.10+
-	•	FFmpeg (for audio extraction & merging)
-pip install aiogram yt-dlp python-dotenv fastapi uvicorn
-⚙️ Configuration & Tips
-File / Var
-Purpose
-Default / Note
-.env → BOT_TOKEN
-Your Telegram bot token from @BotFather
-Required
-cookies.txt
-Netscape-format cookies (export from browser)
-Optional – enables private/age-gated content
-PORT env
-Port for FastAPI keep-alive server
-8000
-MAX_SINGLE_SIZE_MB
-Max file size to send (Telegram ~50 MB limit)
-48
-RATE_LIMIT_SECONDS
-Cooldown between user requests
-45
-Keep yt-dlp updated!
-pip install -U yt-dlp
-(YouTube & TikTok frequently change → old versions break)
-🛠️ Commands
-	•	/start — welcome message + usage
-	•	/cookies — check cookie status & setup guide
-	•	Just send any supported link → choose Video/Audio → quality
-📸 Screenshots
-(Add your own screenshots here – very helpful for users!)
-	1	Start message
-	2	Link received → format buttons
-	3	Quality selection (video)
-	4	Downloading progress
-	5	Successful delivery
-⚠️ Legal & Responsibility
-This bot is for personal, educational use only. Respect platform terms of service and copyright laws. The author is not responsible for any misuse.
-📄 License
-MIT License
-🙏 Acknowledgments
-	•	yt-dlp — the real hero
-	•	aiogram — excellent Telegram framework
-	•	Community examples & issue threads on GitHub
+```bash
+git clone https://github.com/YOUR_USERNAME/telegram-media-downloader.git
+cd telegram-media-downloader
 
-Made with ❤️ in Abuja, Nigeria Last updated: February 2026 Feel free to ⭐ the repo or open issues/PRs!
-### Recommendations before publishing
+echo "BOT_TOKEN=your_token_here" > .env
+# Optional: place cookies.txt here for private content
 
-1. **Add real screenshots**  
-   Take 4–6 clean Telegram chat screenshots (start → buttons → progress → result)  
-   Upload them to repo → replace placeholder links
-
-2. **Create requirements.txt**
-   ```txt
-   aiogram>=3.0
-   yt-dlp
-   python-dotenv
-   fastapi
-   uvicorn
-	3	Add LICENSE file (MIT is common) MIT License
-	4	
-	5	Copyright (c) 2026 Mathias
-	6	
-	7	Permission is hereby granted, free of charge, to any person obtaining a copy...
+docker compose up -d --build
