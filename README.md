@@ -1,18 +1,18 @@
 # Telegram Media Downloader Bot 🎬🎧📥
 
 <p align="center">
-  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/stargazers"><img src="https://img.shields.io/github/stars/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=ffd700&logo=github" alt="GitHub stars"></a>
-  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/forks"><img src="https://img.shields.io/github/forks/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=success&logo=github" alt="GitHub forks"></a>
-  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/watchers"><img src="https://img.shields.io/github/watchers/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=blueviolet&logo=github" alt="GitHub watchers"></a>
-  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/releases/latest"><img src="https://img.shields.io/github/v/release/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=ff69b4&logo=github" alt="Latest Release"></a>
-  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader/blob/main/LICENSE"><img src="https://img.shields.io/github/license/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=important" alt="License: MIT"></a>
-  <a href="https://github.com/YOUR_USERNAME/telegram-media-downloader"><img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"></a>
+  <a href="https://github.com/biggerboy1stPeter/telegram-media-downloader/stargazers"><img src="https://img.shields.io/github/stars/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=ffd700&logo=github" alt="GitHub stars"></a>
+  <a href="https://github.com/biggerboy1stPeter/telegram-media-downloader/forks"><img src="https://img.shields.io/github/forks/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=success&logo=github" alt="GitHub forks"></a>
+  <a href="https://github.com/biggerboy1stPeter/telegram-media-downloader/watchers"><img src="https://img.shields.io/github/watchers/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=blueviolet&logo=github" alt="GitHub watchers"></a>
+  <a href="https://github.com/biggerboy1stPeter/telegram-media-downloader/releases/latest"><img src="https://img.shields.io/github/v/release/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=ff69b4&logo=github" alt="Latest Release"></a>
+  <a href="https://github.com/biggerboy1stPeter/telegram-media-downloader/blob/main/LICENSE"><img src="https://img.shields.io/github/license/YOUR_USERNAME/telegram-media-downloader?style=for-the-badge&color=important" alt="License: MIT"></a>
+  <a href="https://github.com/biggerboy1stPeter/telegram-media-downloader"><img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/YOUR_USERNAME/telegram-media-downloader?style=flat-square&color=9cf" alt="Repo size"> 
-  <img src="https://img.shields.io/github/last-commit/YOUR_USERNAME/telegram-media-downloader?style=flat-square&color=9cf" alt="Last commit"> 
-  <img src="https://img.shields.io/github/commit-activity/m/YOUR_USERNAME/telegram-media-downloader?style=flat-square&color=9cf" alt="Commit activity">
+  <img src="https://img.shields.io/github/repo-size/biggerboy1stPeter/telegram-media-downloader?style=flat-square&color=9cf" alt="Repo size"> 
+  <img src="https://img.shields.io/github/last-commit/biggerboy1stPeter/telegram-media-downloader?style=flat-square&color=9cf" alt="Last commit"> 
+  <img src="https://img.shields.io/github/commit-activity/m/biggerboy1stPeter/telegram-media-downloader?style=flat-square&color=9cf" alt="Commit activity">
 </p>
 
 **Self-hosted Telegram bot** that downloads videos & audio from  
