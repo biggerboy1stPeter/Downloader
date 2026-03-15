@@ -52,3 +52,8 @@ echo "BOT_TOKEN=your_token_here" > .env
 # Optional: place cookies.txt here for private content
 
 docker compose up -d --build
+
+
+
+```
+made with love from nelly 
