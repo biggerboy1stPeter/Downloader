@@ -15,7 +15,6 @@
 - FastAPI keep-alive for free hosting platforms (Render, Railway, Fly.io, ...)
 
 ![Bot Demo Screenshot](https://via.placeholder.com/800x400.png?text=Bot+Demo+Screenshot)  
-*(Replace with your own screenshot – highly recommended!)*
 
 ## ✨ Features
 
